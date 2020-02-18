@@ -27,7 +27,7 @@ MWRAP = mwrap
 expert: expertclean gateway.c mexfile
 
 $(OBJ): $(SRC)
-	$(CC) $(SRC) -c -o $(OBJ) -O -fPIC
+	$(CC) $(SRC) -c -O -fPIC
 
 # Tell mwrap to make the interface and the name of the final MEX file:
 # (note -mb here makes separate .m file for each @ function in the .mw)
